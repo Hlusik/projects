@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(FontAwesome.otf);
+}
+
+body{
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #9b9b9b;
+    line-height: 1.71429;
+    font-weight: 400;
+}
+
+.menu-item{
+    font-size: 16px;
+    letter-spacing: .05em;
+    color: #151515;
+    text-decoration: none;
+    border-left: 1px solid #9b9b9b;
+    padding: 0 25px;
+}
+
+.menu-item:first-child { 
+    color: #e25e90;
+    border: none;
+}
+
+.menu-item::after {     
+    content: '\f107';
+    position: relative;
+    display: inline-block;
+    font: 400 14px "FontAwesome";
+    text-align: center;
+    transition: 0.4s all ease;
+    z-index: 2;
+    color: #151515;
+    will-change: transform;
+    -webkit-filter: blur(0);	
+}
+
+.menu-item+nav{
+    display: none;
+}
