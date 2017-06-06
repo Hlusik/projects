@@ -2,14 +2,22 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/font-awesome.css" />
-	<script src="js/scripts.js"></script>
+	<!--<link rel="stylesheet" href="css/twentytwenty.css" />-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="js/jquery.twentytwenty.js"></script>
+	<script src="js/jquery.event.move.js"></script>
 	<title>Makeup</title>
 </head>
 
 <body>
+	<script>
+		$(window).load(function(){
+		$(".works-photos-block[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.5});
+		});
+	</script>
 	<header>
-		<a class="logo" href=" " title="Makeup">Makeup</a>
+		<a class="logo" href=" " title="Makeup"></a>
 		<nav class="menu">
 			<a class="menu-item" href=" ">Home
 				<nav class="menu-item-submenu home">
@@ -58,9 +66,9 @@
 			<a class="menu-item" href=" ">Contacts</a>
 		</nav>
 		<aside class="social-buttons">
-			<a href=" " class="social-buttons-instagram"></a>
-			<a href=" " class="social-buttons-facebook"></a>
-			<a href=" " class="social-buttons-pinterest"></a>
+			<a href=" " class="fa fa-instagram"></a>
+			<a href=" " class="fa fa-facebook"></a>
+			<a href=" " class="fa fa-pinterest"></a>
 		</aside>
 	</header>
 
@@ -72,42 +80,37 @@
 				<a class="carousel-read-more" href=" ">Read more &rarr;</a>
 			</article>
 			<article class="carousel-container">				
-				<img class="carousel-container-item" src="girl1.png" alt="girl1">
-				<img class="carousel-container-item" src="girl2.png" alt="girl2">
-				<img class="carousel-container-item" src="girl3.png" alt="girl3">
+				<img class="carousel-container-item" src="img/slider1-slide-1.jpg" alt="girl1">
+				<img class="carousel-container-item" src="img/slider1-slide-2.jpg" alt="girl2">
+				<img class="carousel-container-item" src="img/slider1-slide-3.jpg" alt="girl3">
 			</article>
 			<article class="carousel-buttons">
 				<button class="carousel-buttons-prev"></button>
 				<button class="carousel-buttons-next"></button>
 			</article>
-			<article class="carousel-dots">
-				<a class="carousel-dots-item href=" "></a>
-				<a class="carousel-dots-item href=" "></a>
-				<a class="carousel-dots-item href=" "></a>
-			</article>
 		</section>
 		<section class="services">
 			<section class="services-description">
-				<h2 class="services-description-title">All Eyes
+				<h2 class="services-description-title">All Eyes <br><div class="divider"></div>
 on You</h2>
 				<p>
 					<small class="text-small">To fix the focus on you and on highlighting your beauty and channeling it outwards, me and my team of professional visagists will go any extra mile and use only the best makeup products!</small>
 				</p>
-			</section>
+			</section>						
 			<ul class="price-list">
-				<li class="price-list-item">
+				<li class="price-list-item first">
 					<p>
 						<strong class="text-big"><a>Bridal Makeup</a></strong>
 						<small class="text-small">From $156.00</small>
 					</p>
 				</li>
-				<li>
+				<li class="price-list-item second">
 					<p>
 						<strong class="text-big"><a>Special Makeup</a></strong>
 						<small class="text-small">From $100.00</small>
 					</p>
 				</li>
-				<li>
+				<li class="price-list-item third">
 					<p>
 						<strong class="text-big"><a>Makeup Lessons</a></strong>
 						<small class="text-small">From $40.00</small>
@@ -115,32 +118,32 @@ on You</h2>
 				</li>
 			</ul>
 			<a class="link-button" href=" ">Make an Appointment
-			</a>
+			</a>			
 		</section>
 		<section class="awards">			
-			<img class="awards-item" src="quality.png" alt="">
-			<img class="awards-item" src="authentic.png" alt="">
-			<img class="awards-item" src="home.png" alt="">
-			<img class="awards-item" src="mountain.png" alt="">
+			<img class="awards-item" src="img/sert1.png" alt="">
+			<img class="awards-item" src="img/sert2.png" alt="">
+			<img class="awards-item" src="img/sert3.png" alt="">
+			<img class="awards-item" src="img/sert4.png" alt="">
 		</section>
 		<section class="works">
 			<article class="works-description">
 				<h2 class="works-description-title">My works</h2>
-				<p>More than 300 makeup projects in the portfolio</p>
+				<p><h3>More than <i>300</i> makeup projects in the portfolio</h3></p>
 				<a class="link-button" href=" ">See all works</a>
 			</article>
 			<article class="works-photos">
 				<figure class="works-photos-block">
-					<img class="works-photos-block-item" src="face11.png" alt="">
-					<img class="works-photos-block-item" src="face12.png" alt="">
+					<img class="works-photos-block-item" src="img/before-01.jpg" alt="">
+					<img style="display:none;" class="works-photos-block-item" src="img/after-01.jpg" alt="">
 				</figure>			
 				<figure class="works-photos-block">
-					<img class="works-photos-block-item" src="face21.png" alt="">
-					<img class="works-photos-block-item" src="face22.png" alt="">
+					<img class="works-photos-block-item" src="img/before.jpg" alt="">
+					<img style="display:none;" class="works-photos-block-item" src="img/after.jpg" alt="">
 				</figure>			
 				<figure class="works-photos-block">
-					<img class="works-photos-block-item" src="face31.png" alt="">
-					<img class="works-photos-block-item" src="face32.png" alt="">
+					<img class="works-photos-block-item" src="img/before-02.jpg" alt="">
+					<img style="display:none;" class="works-photos-block-item" src="img/after-02.jpg" alt="">
 				</figure>
 			</article>
 		</section>
@@ -148,33 +151,36 @@ on You</h2>
 
 	<footer>
 		<section class="contact-us">
-			<h3 class="contact-us-title">CONTACT US</h3>
+			<h4 class="contact-us-title">CONTACT US</h4>
 			<a href=" ">+1 (409) 987–5874</a>
 			<a href=" ">info@demolink.org</a>			
-			<p class="contact-us-address">6036 Richmond hwy.,Alexandria, VA, 2230</p>
+			<p class="contact-us-address">6036 Richmond hwy.,
+				<br>
+				Alexandria, VA, 2230</p>
 		</section>
 		<nav class="about-us">
-			<h3 class="about-us-title">ABOUT US</h3>
+			<h4 class="about-us-title">ABOUT US</h4>
 			<a href=" ">Portfolio</a>
 			<a href=" ">About Us</a>
 			<a href=" ">Testimonials</a>
 			<a href=" ">Blog</a>
 		</nav>
 		<nav class="footer-services">
-			<h3 class="footer-services-title">SERVICES</h3>
+			<h4 class="footer-services-title">SERVICES</h4>
 			<a href=" ">Bridal Makeup</a>
 			<a href=" ">Special Makeup</a>
 			<a href=" ">Makeup Lessons</a>			
 		</nav>
 		<form class="subscribe" action="">
-			<h3 class="subscribe-title">SUBSCRIBE TO NEWSLETTER</h3>
+			<h4 class="subscribe-title">SUBSCRIBE TO NEWSLETTER</h4>
 			<p><small class="text-small">Get the latest tips on makeup and facial care!</small></p>
-			<input class="subscribe-email-input" type="email" name="email" placeholder="E-mail..." required>
-			<button class="subscribe-email-button"></button>
+			<div class="subscribe-email">
+				<input class="subscribe-email-input" type="email" name="email" placeholder="E-mail..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail...'" required>
+				<button class="subscribe-email-button"></button>
+			</div>
 		</form>
-		<hr>
-		<div>
-			<p><small class="text-small">MakeUp &copy; 2017. <a href=" ">Privacy Policy</a></small></p>
+		<div>			
+			<p>MakeUp &copy; 2017. <a href=" ">Privacy Policy</a></p>
 		</div>
 	</footer>
 </body>
