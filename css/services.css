@@ -1,0 +1,66 @@
+.services{
+    display: -webkit-flex;
+    display: flex;
+    align-content: space-between;
+
+    -webkit-flex-flow: column wrap; /* Safari 6.1+ */
+    flex-flow: column wrap;
+    
+    font-weight: bold;
+    text-align: center;
+
+    height: 438px;
+    padding: 100px 0 110px 0;
+
+    background-image: url(../img/home.jpg);
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.services-description, .link-button, .price-list{
+    max-width: 300px;
+}
+
+.services-description-title > .divider{    
+    display: inline-flex;
+    content: '';
+    width: 50px;
+    transform: translateY(-150%);
+    border-top: 0.09em solid #d3dbd3;    
+}
+
+
+@media (max-width: 768px){
+    .services{
+    align-content: center;
+    justify-content: center;
+
+    height: 100%;
+    padding: 50px 0;
+
+    background-image: none;
+}
+
+.services-description{
+    order: -1;
+    margin-bottom: 50px;
+}
+
+h2, .services-description-title{
+    font-size: 34px;
+    color: #151515;
+    font-weight: 700;
+    font-family: "Playfair Display","Times New Roman",Times,serif;
+    letter-spacing: 1.75px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.text-big{
+    font-size: 22px;
+    font-weight: bold;
+    color: #151515;
+    font-family: "Playfair Display","Times New Roman",Times,serif;
+}
+}

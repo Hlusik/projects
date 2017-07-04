@@ -1,0 +1,25 @@
+.awards{
+    justify-content: center;
+    display: flex;
+    background-image: url(../img/bgimg.jpg);
+    background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.awards-item{
+    margin: 90px 0;
+    padding: 0 46px;
+}
+
+@media (max-width: 768px){
+    .awards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0 110px;
+    }
+
+    .awards-item{
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,33 @@
+.works{
+    margin-top: 90px;
+    margin-bottom: 90px; 
+}
+
+.works-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.works-photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.works-photos-block-item{
+    border: 11px solid #f2f3f8;
+    margin:  11.5px;
+}
+
+@media (max-width: 768px){
+    .works-description{
+        flex-direction: column;
+    }
+
+    .works-photos{
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
